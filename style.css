@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: 'RobotoRegular';
+}
+
+.wrapper {
+	background-image: linear-gradient(to bottom, #f5f7fd, #f1f5fd, #ecf3fd, #e6f2fd, #e0f0fd);
+	min-height: 100vh;
+}
+
+/* Меню */
+
+.nav {
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.nav-list {
+	list-style-type: none;
+	display: inline-flex;
+}
+
+.nav-list-item {
+	padding: 10px 20px;
+}
+
+.nav-list-link {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 20px;
+	color: #F03328;
+	font-family: 'RobotoRegular';
+}
+
+/* Меню, конец */
