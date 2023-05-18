@@ -88,6 +88,17 @@ body {
 	outline: 1px solid red;
 }
 
+.top-button {
+	display: inline-block;
+	height: 50px;
+	background-color: #F03328;
+	color: #fff;
+	font-size: 20px;
+	line-height: 50px;
+	padding: 0 30px;
+	border-radius: 30px;
+}
+
 /* Секция 1, конец */
 
 
