@@ -12,9 +12,14 @@
 	font-family: 'RobotoRegular';
 }
 
-.wrapper {
+body {
 	background-image: linear-gradient(to bottom, #f5f7fd, #f1f5fd, #ecf3fd, #e6f2fd, #e0f0fd);
+}
+
+.wrapper {
 	min-height: 100vh;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 /* Меню */
@@ -44,3 +49,50 @@
 }
 
 /* Меню, конец */
+
+/* Заголовки */
+
+.main-h1 {
+	font-size: 40px;
+	line-height: 50px;
+}
+
+.main-h2 {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+/* Заголовки, конец */
+
+/* Секции */
+
+.section {
+	
+}
+
+.section-1 {
+	display: flex;
+}
+
+/* Секции, конец */
+
+/* Секция 1 */
+
+.top-1 {
+	width: 50%;
+	outline: 1px solid red;
+}
+
+.top-2 {
+	width: 50%;
+	outline: 1px solid red;
+}
+
+/* Секция 1, конец */
+
+
+
+
+
+
+
