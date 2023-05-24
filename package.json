@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/EvgenijBaltais/gifts#readme",
   "dependencies": {
-    "glidejs": "^2.1.0"
+    "@glidejs/glide": "^3.6.0"
   }
 }
