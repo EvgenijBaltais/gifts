@@ -30,7 +30,7 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
+						<a href = "1.php" class = "small-btn btn-10px item-order-btn">
 							Заказать
 						</a>
 						<a class = "small-btn btn-10px item-order-btn">
