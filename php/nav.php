@@ -16,5 +16,5 @@
 				<a href="contacts.php" class = "nav-list-link">Контакты</a>
 			</li>
 		</ul>
-		<a href="/cart.php" class = "cart full-cart"></a>
+		<a href="/cart.php" class = "cart"></a>
 	</nav>

@@ -6,7 +6,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/catalog.css">
-	<script src = "../script.js"></script>
+	<script src = "../js/script.js"></script>
 </head>
 <body>
 
@@ -18,6 +18,7 @@
 	<section class = "section section-assortment" id = "assortment">
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -42,6 +43,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -66,6 +68,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -90,6 +93,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -114,6 +118,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -138,6 +143,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -162,6 +168,7 @@
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+			<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>

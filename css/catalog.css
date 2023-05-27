@@ -1,3 +1,5 @@
+@import url("assortment.css");
+
 /* Секции */
 
 .section {
@@ -10,93 +12,3 @@
 }
 
 /* Секции, конец */
-
-
-/* Секция Ассортимент */
-
-.assortment-item {
-	display: flex;
-	width: calc(25% - 19px);
-	margin-right: 25px;
-	margin-bottom: 25px;
-	padding: 20px 0 0 0;
-	overflow: visible;
-}
-
-.assortment-item:nth-child(4n) {
-	margin-right: 0
-}
-
-.assortment-item-w {
-	width: 100%;
-	position: relative;
-	min-height: 200px;
-	border-radius: 10px;
-	padding: 20px;
-	bottom: 0;
-	box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
-	background-color: #FCF7F6;
-	transition: bottom .3s;
-}
-
-.assortment-item-w:hover {
-	bottom: 10px;
-	transition: bottom .3s;
-}
-
-.item-top {
-	width: 100%;
-	height: 250px
-}
-
-.item-bottom {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 20px 0 0 0;
-}
-
-.item-title {
-	width: 100%;
-	font-weight: bold;
-	padding: 10px 0;
-}
-
-.item-info {
-	padding: 10px 0 20px 0;
-	border: 0!important;
-	outline: 0!important;
-	border-radius: 10px;
-	width: calc(50% - 10px);
-}
-
-.item-info:last-child {
-	text-align: right;
-}
-
-.item-info__span {
-	font-weight: bold;
-}
-
-.product-pic {
-	display: block;
-	max-width: 100%;
-	max-height: 100%;
-	margin: 0 auto;
-}
-
-.item-order-info {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.item-order-btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 47.5%;
-	text-decoration: none;
-}
-
-/* Секция Ассортимент, конец */

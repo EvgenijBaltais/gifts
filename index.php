@@ -6,12 +6,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
-	<script src = "script.js"></script>
+	<script src = "js/script.js"></script>
 </head>
 <body>
-
-	раздел плюс минус
-
 
 <div class = "wrapper">
 
@@ -67,6 +64,7 @@
 	<section class = "section section-assortment" id = "assortment">
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -79,18 +77,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a href = "/catalog" class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -103,18 +98,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -127,18 +119,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -151,18 +140,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -175,18 +161,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -199,18 +182,15 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="assortment-item">
 			<div class="assortment-item-w">
+				<div class="chat-pic" title = "Заказать в чате"></div>
 				<div class = "item-top">
 					<img src="/images/kofe.jpg" alt="" class = "product-pic">
 				</div>
@@ -223,19 +203,18 @@
 						<span class = "item-info__span">2000 р</span>
 					</div>
 					<div class = "item-order-info">
-						<a class = "small-btn btn-10px item-order-btn">
-							Заказать
-						</a>
-						<a class = "small-btn btn-10px item-order-btn">
-							Подробнее
-						</a>
+						<a class = "small-btn btn-10px item-order-btn">Заказать</a>
+						<a class = "small-btn btn-10px item-order-btn">Подробнее</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	<section></section>
+	<section class = "plus-minus">
+
+		<h2>Плюсы и минусы</h2>
+	</section>
 	<section></section>
 	
 </div>

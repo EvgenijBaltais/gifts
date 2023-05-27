@@ -1,6 +1,23 @@
 .cart-wrapper {
+	position: relative;
 	width: 100%;
-	padding: 50px 0
+	padding: 100px 0
+}
+
+.cart-preloader {
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto
+}
+
+.cart-section {
+	text-align: center;
 }
 
 .cart-item {
@@ -12,6 +29,10 @@
 
 .cart-item:first-child {
 	border-bottom: 0;
+}
+
+.cart-item:first-child + .cart-item-final {
+	border-top: 1px solid #000
 }
 
 .cart-item-final {
