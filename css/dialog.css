@@ -1,0 +1,13 @@
+body {
+    position: relative;
+}
+
+.dialog {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 90px;
+    height: 90px;
+    background-image: url('../images/icons/consult.png');
+    background-size: cover;
+}
