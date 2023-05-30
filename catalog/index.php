@@ -10,10 +10,9 @@
 </head>
 <body>
 
-<div class = "wrapper">
-
 	<? require_once('../php/nav.php');?>
 
+<div class = "wrapper">
 
 	<section class = "section section-assortment" id = "assortment">
 		<div class="assortment-item">

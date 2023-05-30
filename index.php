@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<div class = "wrapper">
+<? require_once('php/nav.php');?>
 
-	<? require_once('php/nav.php');?>
+<div class = "wrapper">
 
 	<section class = "section section-top">
 

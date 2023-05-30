@@ -178,6 +178,17 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
+
+    // Скроллинг и фиксация меню
+
+    let navHeight = document.querySelector('.nav').clientHeight
+
+    document.addEventListener('scroll', () => {
+
+        window.scrollY > navHeight ? document.querySelector('.nav').classList.add('nav-static') : document.querySelector('.nav').classList.remove('nav-static')
+    })
+
 })
 
 

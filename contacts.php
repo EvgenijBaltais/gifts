@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<div class = "wrapper">
-
 	<? require_once('php/nav.php');?>
+
+<div class = "wrapper">
 
 	<h1 class = "main-h1">Контакты для связи</h1>
 

@@ -14,22 +14,38 @@
 }
 
 body {
+	position: relative;
 	background-image: linear-gradient(to bottom, #f5f7fd, #f1f5fd, #ecf3fd, #e6f2fd, #e0f0fd);
 }
 
 .wrapper {
 	min-height: 100vh;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 100px auto 0 auto;
+}
+
+.content-width {
+	position: relative;
+	max-width: 1200px;
 }
 
 /* Меню */
 
 .nav {
-	position: relative;
+	position: fixed;
+	top: 0;
 	display: flex;
+	width: 100%;
 	justify-content: center;
-	padding: 30px 0;
+	padding: 20px 0;
+	background: #F5F7FD;
+	z-index: 3;
+}
+
+.nav-static {
+	-webkit-box-shadow: 0 2px 3px 0 rgba(34, 60, 80, 0.1);
+	-moz-box-shadow: 0 2px 3px 0 rgba(34, 60, 80, 0.1);
+	box-shadow: 0 2px 3px 0 rgba(34, 60, 80, 0.1);
 }
 
 .nav-list {
@@ -60,7 +76,7 @@ body {
 	background-size: cover;
 	position: absolute;
 	top: 0;
-	right: 10px;
+	right: -200px;
 	bottom: 0;
 	margin: auto;
 }
