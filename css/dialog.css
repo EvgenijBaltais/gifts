@@ -2,12 +2,55 @@ body {
     position: relative;
 }
 
-.dialog {
+.get-dialog {
     position: fixed;
-    bottom: 100px;
+    bottom: 50px;
     right: 100px;
     width: 90px;
     height: 90px;
     background-image: url('../images/icons/consult.png');
     background-size: cover;
+    cursor: pointer;
+}
+
+.dialog {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    width: 300px;
+    height: 400px;
+    border: 3px solid green;
+    border-radius: 5px;
+}
+
+.dialog-top {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 10px;
+    height: 40px;
+    background-color: green;
+}
+
+.close-title {
+    color: #fff
+}
+
+.close-chat {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../images/icons/close.svg');
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.dialog-body {
+    width: 100%;
+    height: calc(100% - 40px);
+    background-color: #fff;
 }

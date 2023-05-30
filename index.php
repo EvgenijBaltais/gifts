@@ -6,7 +6,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/dialog.css">
 	<script src = "js/script.js"></script>
+	<script src = "js/dialog.js"></script>
 </head>
 <body>
 
