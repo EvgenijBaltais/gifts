@@ -29,6 +29,14 @@ body {
 	max-width: 1200px;
 }
 
+.full-content-width {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
 /* Меню */
 
 .nav {
@@ -76,7 +84,7 @@ body {
 	background-size: cover;
 	position: absolute;
 	top: 0;
-	right: -200px;
+	right: 0;
 	bottom: 0;
 	margin: auto;
 }

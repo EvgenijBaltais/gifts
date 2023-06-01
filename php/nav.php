@@ -1,5 +1,8 @@
 	<nav class = "nav">
-		<div class = "content-width">
+		<div class = "full-content-width">
+			<a href = "/">
+				<img src="images/logo.png" alt="Coffee planet">
+			</a>
 			<ul class = "nav-list">
 				<li class = "nav-list-item">
 					<a href="/" class = "nav-list-link">Главная</a>
