@@ -32,6 +32,7 @@ body {
 .full-content-width {
 	position: relative;
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 	max-width: 1200px;
@@ -99,6 +100,16 @@ body {
 	height: 14px;
 	background-color: #F58220;
 	border-radius: 50%;
+}
+
+.logo-main-link {
+	position: absolute;
+	left: 0;
+}
+
+.logo-main {
+	display: block;
+	width: 60px;
 }
 
 /* Меню, конец */
