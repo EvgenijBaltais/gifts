@@ -1,7 +1,7 @@
 	<nav class = "nav">
 		<div class = "full-content-width">
 			<a href = "/" class = "logo-main-link">
-				<img src="images/logo.png" alt="Coffee planet" class = "logo-main">
+				<img src="/images/logo.png" alt="Coffee planet" class = "logo-main">
 			</a>
 			<ul class = "nav-list">
 				<li class = "nav-list-item">
