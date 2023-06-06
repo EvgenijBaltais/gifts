@@ -215,9 +215,15 @@
 
 	<section class = "plus-minus">
 
-		<h2>Плюсы и минусы</h2>
+	<h2 class = "h2-title">Почему стоит заказать именно у нас? Наши преимущества:</h2>
+
+		<div class="advantages-block">
+
+			<div class="advantage-item"></div>
+		</div>
+
+
 	</section>
-	<section></section>
 	
 </div>
 

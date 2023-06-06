@@ -10,9 +10,9 @@
 </head>
 <body>
 
-<div class = "wrapper">
+<? require_once('php/nav.php');?>
 
-	<? require_once('php/nav.php');?>
+<div class = "wrapper">
 
 	<h1 class = "secondary-h1">Корзина</h1>
 
