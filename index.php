@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/dialog.css">
+	<link rel="stylesheet" href="css/advantages.css">
 	<script src = "js/script.js"></script>
 	<script src = "js/dialog.js"></script>
 </head>
@@ -213,18 +214,45 @@
 		</div>
 	</section>
 
-	<section class = "plus-minus">
-
-	<h2 class = "h2-title">Почему стоит заказать именно у нас? Наши преимущества:</h2>
-
+	<section class = "section plus-minus">
+		<h2 class = "h2-title">Почему стоит заказать именно у нас? Наши преимущества:</h2>
 		<div class="advantages-block">
+			<div class="advantage-item">
+				<p class = "advantage-title">Только оригинальный товар.</p>
+				<p class = "advantage-text">У нас вы не столкнетесь с подделками. Соблазнившись низкой ценой, очень легко попасть на контрафактную продукцию.
+					Особенно это актуально в сегодняшнее время санкций и паралелльного импорта. В результате - потраченные деньги и разочарование в покупке.
+					Это все не про нас.</p>
+			</div>
+			<div class="advantage-item">
+				<p class = "advantage-title">Индивидуальный подход к каждому клиенту</p>
+				<p class = "advantage-text">
+					Мы с удовольствием ответим на любой Ваш вопрос и учтем все Ваши пожелания. 
+					Нашим клиентам мы предоставляем скидки и подарки, проводим акции.</p>
+			</div>
+			<div class="advantage-item">
+				<p class = "advantage-title">Гарантия качества</p>
+				<p class = "advantage-text">Если Вас смутит какой-то из наших товаров, то мы без проблем вернем деньги или обменяем. 
+					Лояльная поддержка по всем вопросам всегда к Вашим услугам</p>
+			</div>
+			<div class="advantage-item">
+				<p class = "advantage-title">Гибкие условия</p>
+				<p class = "advantage-text"></p>
+			</div>
 
-			<div class="advantage-item"></div>
+			<div class="advantage-item">
+				<p class = "advantage-title">Бережное обращение с персональными данными</p>
+				<p class = "advantage-text">
+					Никаких нежелательных спам-рассылок, смс и звонков.
+					Никаких утекших в сеть баз заказов с адресами.
+					Мы никогда не злоупотребляем Вашим доверием.</p>
+			</div>
 		</div>
-
-
 	</section>
 	
+	<section class = "section plus-minus">
+		<h2 class = "h2-title">Бренды, которые мы продаем:</h2>
+	</section>
+
 </div>
 
 	<? require_once('php/footer.php');?>

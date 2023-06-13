@@ -181,8 +181,9 @@ body {
 }
 
 .h2-title {
-	font-size: 24px;
-	padding-bottom: 20px;
+	font-size: 30px;
+	line-height: 40px;
+	padding-bottom: 40px;
 }
 
 /* Заголовки, конец */

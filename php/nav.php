@@ -14,7 +14,7 @@
 					<a href="" class = "nav-list-link">О нас</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="" class = "nav-list-link">Условия доставки</a>
+					<a href="/delivery.php" class = "nav-list-link">Условия доставки</a>
 				</li>
 				<li class = "nav-list-item">
 					<a href="/contacts.php" class = "nav-list-link">Контакты</a>
