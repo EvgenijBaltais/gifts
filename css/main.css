@@ -46,14 +46,16 @@
 	justify-content: center;
 }
 
-.section-assortment {
+.assortment-group {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.section-welcome {
-
+.assortment-group-t {
+	width: 100%;
+	padding: 30px 0;
 }
+
 
 /* Секции, конец */
 
