@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/advantages.css">
 	<script src = "js/script.js"></script>
 	<script src = "js/dialog.js"></script>
+	<script src = "plugins/Inputmask-5.x/dist/inputmask.min.js"></script>
 </head>
 <body>
 
@@ -24,6 +25,7 @@
 			<h2 class = "main-h2">Лучшие сорта для настоящих ценителей</h2>
 
 			<div href="" class="red-btn btn-30px top-button">
+				<div class = "top-button-ins"></div>
 				<span class="red-btn-span">Заказать</span>
 				<div class="red-btn-ins"></div>
 			</div>

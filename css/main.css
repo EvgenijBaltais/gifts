@@ -3,9 +3,22 @@
 /* Кнопки */
 
 .top-button {
+	position: relative;
 	font-size: 20px;
 	line-height: 50px;
 	margin: 50px 0 0 0
+}
+
+.top-button-ins {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	background: transparent;
+	cursor: pointer;
+	z-index: 3;
 }
 
 .more-info {
@@ -85,34 +98,3 @@
 
 /* Секция 1, конец */
 
-
-/* Секция Welcome */
-
-/* Секция Welcome, конец */
-
-/* Footer */
-
-.footer {
-	display: flex;
-	width: 100%;
-	min-height: 200px;
-	background-color: #11386B;
-}
-
-.footer-w {
-	display: flex;
-	width: 100%;
-	max-width: 1200px;
-	margin: 50px auto;
-}
-
-.footer-block {
-	width: 33.333333%;
-	border-right: 1px solid #fff;
-}
-
-.footer-block:last-child {
-	border-right: 0
-}
-
-/* Footer, конец */

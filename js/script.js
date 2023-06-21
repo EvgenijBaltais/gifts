@@ -86,15 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
                             order[key] == +event.target.parentElement.parentElement.querySelector('.cart-id').innerText ? delete order[key] : ''
                         }
 
-                        console.log(Object.keys(order).length)
-
                         Object.keys(order).length === 0 ?
                             window.localStorage.removeItem('order') :
                             window.localStorage.setItem('order', JSON.stringify(order))
 
                         event.target.parentElement.parentElement.remove()
-
-                        console.log(document.querySelectorAll('.cart-item').length)
 
                         if (!document.querySelectorAll('.cart-item').length) {
 
@@ -104,9 +100,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
                     })
                 })
-
-
-
                 document.querySelector('.cart-preloader').remove()
             }, 500)
         }
@@ -119,10 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <a href = "/">На главную</a>
                 <a href = "/catalog/">В каталог</a>
             `)
-
             document.querySelector('.cart-preloader') ? document.querySelector('.cart-preloader').remove() : ''
         }
-
     }
 
 
@@ -158,9 +149,71 @@ document.addEventListener('DOMContentLoaded', () => {
                 glide.go(event.target.getAttribute('data-glide-dir'))
             })
         })
-
     }
 
+
+    // Всплывающие формы
+
+
+    document.querySelector('.top-button-ins').addEventListener('click', () => {
+
+        let form = `<div class = "overlay">
+
+                <div class = "form-order">
+                    <div class = "close-form"></div>
+                    <p class = "form-order-title">Отправить заявку</p>
+                    <p class = "form-order-subtitle">И мы свяжемся с Вами в кратчайшие сроки</p>
+                    <form class = "order-form" name = "order-form">
+                        <div class = "form-order-wrapper">
+                            <div class = "form-order-item">
+                                <input type = "text" class = "form-order-input" name = "name" placeholder = "Ваше имя">
+                            </div>
+                            <div class = "form-order-item">
+                                <input type = "text" class = "form-order-input" name = "email" placeholder = "Ваш Email">
+                            </div>
+                            <div class = "form-order-item">
+                                <input type = "text" class = "form-order-input form-order-input-phone" name = "phone" placeholder = "Ваш телефон">
+                            </div>
+                            <div class = "form-order-item">
+                                <textarea class = "form-order-textarea" placeholder = "Текст сообщения"></textarea>
+                            </div>
+                            <div class = "form-order-submit">
+                                <button type = "button" class = "form-order-btn btn">Заказать!</button>
+                            </div>
+
+                            <div class = "form-order-agree">
+                                * Нажимая на кнопку "Заказать!", Вы даете согласие на обработку персональных данных
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>`
+
+        document.body.insertAdjacentHTML('beforeend', form)
+        body_lock()
+
+        // Маска телефона
+
+        let im = new Inputmask("+7 (999) 999-99-99")
+            im.mask(document.querySelector('.form-order-input-phone'))
+
+        // Отправка формы
+
+        document.querySelector('.form-order-btn').addEventListener('click', () => {
+
+        })
+
+        document.querySelector('.overlay').addEventListener('click', () => {
+
+            if (event.target.classList.contains('overlay') || event.target.classList.contains('close-form')) {
+
+                body_unlock()
+                document.querySelector('.overlay').remove()
+            }
+        })
+    })
+
+    // Всплывающие формы, конец
 
 
     if (document.querySelectorAll('.scroll-to').length) {
@@ -168,8 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.scroll-to').forEach(item => {
 
             item.addEventListener('click', () => {
-
-                console.log(document.getElementById(item.getAttribute('data-scroll-to')).offsetTop)
 
                 window.scrollTo({
                     top: document.getElementById(item.getAttribute('data-scroll-to')).offsetTop,
@@ -190,6 +241,29 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 })
+
+
+function body_lock() {
+
+    let body = document.body;
+    if (!body.classList.contains('scroll-locked')) {
+        let bodyScrollTop = (typeof window.pageYOffset !== 'undefined') ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+        body.classList.add('scroll-locked');
+        body.style.top = "-" + bodyScrollTop + "px";
+        body.setAttribute("data-popup-scrolltop", bodyScrollTop)
+    }
+}
+
+function body_unlock() {
+    let body = document.body;
+    if (body.classList.contains('scroll-locked')) {
+        let bodyScrollTop = document.body.getAttribute("data-popup-scrolltop");
+        body.classList.remove('scroll-locked');
+        body.style.top = "";
+        body.removeAttribute("data-popup-scrolltop")
+        window.scrollTo(0, bodyScrollTop)
+    }
+}
 
 
 function getClickedElementIndex(arr) {

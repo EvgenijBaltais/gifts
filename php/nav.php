@@ -14,12 +14,12 @@
 					<a href="" class = "nav-list-link">О нас</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="/delivery.php" class = "nav-list-link">Условия доставки</a>
+					<a href="/delivery" class = "nav-list-link">Условия доставки</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="/contacts.php" class = "nav-list-link">Контакты</a>
+					<a href="/contacts" class = "nav-list-link">Контакты</a>
 				</li>
 			</ul>
-			<a href="/cart.php" class = "cart"></a>
+			<a href="/cart" class = "cart"></a>
 		</div>
 	</nav>

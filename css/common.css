@@ -133,11 +133,42 @@ body {
 
 .footer-block {
 	width: 33.333333%;
-	border-right: 1px solid #fff;
 }
 
 .footer-block:last-child {
-	border-right: 0
+	display: flex;
+    flex-wrap: wrap;
+    border-right: 0;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.footer-nav {
+	list-style-type: none;
+}
+
+.footer-nav__link {
+	font-size: 18px;
+	line-height: 28px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.logo-main-link {
+
+}
+
+.footer-logo-pic {
+	max-width: 70px;
+}
+
+.footer-logo-p {
+	width: 100%;
+	padding-top: 5px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #fff;
 }
 
 /* Footer, конец */
@@ -242,7 +273,103 @@ body {
 	transition: left .3s;
 }
 
+.scroll-locked {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 100%;
+	background: rgb(0,0,0,.5);
+	overflow: auto;
+	z-index: 5;
+}
+
 /* Всякие теги, конец */
+
+
+/* Всплывающие формы */
+
+.form-order {
+	position: relative;
+	margin: 200px auto;
+	max-width: 600px;
+	padding: 50px;
+	background: #fff;
+	z-index: 6;
+}
+
+.close-form {
+	position: absolute;
+	top: -40px;
+	right: -40px;
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/icons/close-white.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	cursor: pointer;
+}
+
+.form-order-item {
+	margin-bottom: 20px;
+}
+
+.form-order-btn {
+	width: 100%;
+	outline: 0!important;
+	border: 0;
+	border-radius: 20px;
+}
+
+.form-order-input {
+	display: block;
+	border-radius: 20px;
+	width: 100%;
+	height: 60px;
+	padding: 0 10px;
+	border: 1px solid #000;
+	outline: 0!important;
+}
+
+.form-order-textarea {
+	display: block;
+	border-radius: 20px;
+	padding: 10px;
+	width: 100%;
+	min-height: 300px;
+	outline: 0!important;
+}
+
+.form-order-agree {
+	padding: 40px 0 0 0;
+}
+
+.form-order-title {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: bold;
+	padding: 20px 0 10px 0;
+	text-align: center;
+}
+
+.form-order-subtitle {
+	text-align: center;
+	font-size: 16px;
+	padding: 0 0 30px 0;
+}
+
+/* Всплывающие формы, конец */
+
 
 /* Модификаторы */
 

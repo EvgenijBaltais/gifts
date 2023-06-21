@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<? require_once('php/nav.php');?>
+<? require_once('../php/nav.php');?>
 
 <div class = "wrapper">
 
@@ -51,7 +51,7 @@
 
 </div>
 
-	<? require_once('php/footer.php');?>
+	<? require_once('../php/footer.php');?>
 
 </body>
 </html>

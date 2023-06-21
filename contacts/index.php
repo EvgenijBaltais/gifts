@@ -6,12 +6,11 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/common.css">
 	<link rel="stylesheet" href="../css/cart.css">
-	<script src = "/node_modules/@glidejs/glide/dist/glide.min.js"></script>
 	<script src = "../js/script.js"></script>
 </head>
 <body>
 
-	<? require_once('php/nav.php');?>
+	<? require_once('../php/nav.php');?>
 
 <div class = "wrapper">
 
@@ -25,7 +24,7 @@
 
 </div>
 
-	<? require_once('php/footer.php');?>
+	<? require_once('../php/footer.php');?>
 
 </body>
 </html>
