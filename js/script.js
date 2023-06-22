@@ -154,64 +154,110 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Всплывающие формы
 
+    (function() {
 
-    document.querySelector('.top-button-ins').addEventListener('click', () => {
+        if (!document.querySelector('.top-button-ins')) return false
 
-        let form = `<div class = "overlay">
+        document.querySelector('.top-button-ins').addEventListener('click', () => {
 
-                <div class = "form-order">
-                    <div class = "close-form"></div>
-                    <p class = "form-order-title">Отправить заявку</p>
-                    <p class = "form-order-subtitle">И мы свяжемся с Вами в кратчайшие сроки</p>
-                    <form class = "order-form" name = "order-form">
-                        <div class = "form-order-wrapper">
-                            <div class = "form-order-item">
-                                <input type = "text" class = "form-order-input" name = "name" placeholder = "Ваше имя">
+            let form = `<div class = "overlay">
+
+                    <div class = "form-order">
+                        <div class = "close-form"></div>
+                        <p class = "form-order-title">Отправить заявку</p>
+                        <p class = "form-order-subtitle">И мы свяжемся с Вами в кратчайшие сроки</p>
+                        <form class = "order-form" name = "order-form">
+                            <div class = "form-order-wrapper">
+                                <div class = "form-order-item">
+                                    <input type = "text" class = "form-order-input" name = "name" placeholder = "Ваше имя">
+                                </div>
+                                <div class = "form-order-item">
+                                    <input type = "text" class = "form-order-input" name = "email" placeholder = "Ваш Email">
+                                </div>
+                                <div class = "form-order-item form-order-item-phone">
+                                    <input type = "text" class = "form-order-input form-order-input-phone" name = "phone" placeholder = "Ваш телефон">
+                                </div>
+                                <div class = "form-order-item">
+                                    <textarea class = "form-order-textarea" placeholder = "Текст сообщения"></textarea>
+                                </div>
+
+                                <div class="contact-method">
+                                    <p class = "contact-method-title">Какой способ связи для Вас предпочтительнее?</p>
+                                        <form name = "contact-method-form" class = "contact-method-form">
+                                            <label class="contact-label">
+                                                <input type="radio" name="radio" checked />
+                                                <span>Телефон</span>
+                                            </label>
+                                            <label class="contact-label">
+                                                <input type="radio" name="radio" />
+                                                <span>Whatsapp</span>
+                                            </label>
+                                            <label class="contact-label">
+                                                <input type="radio" name="radio" />
+                                                <span>Telegramm</span>
+                                            </label>
+                                            <label class="contact-label">
+                                                <input type="radio" name="radio" />
+                                                <span>Не важно</span>
+                                            </label>
+                                        </form>
+                                </div>
+
+                                <div class = "form-order-submit">
+                                    <button type = "button" class = "form-order-btn btn">Заказать!</button>
+                                </div>
+
+                                <div class = "form-order-agree">
+                                    * Нажимая на кнопку "Заказать!", Вы даете согласие на обработку персональных данных
+                                </div>
                             </div>
-                            <div class = "form-order-item">
-                                <input type = "text" class = "form-order-input" name = "email" placeholder = "Ваш Email">
-                            </div>
-                            <div class = "form-order-item">
-                                <input type = "text" class = "form-order-input form-order-input-phone" name = "phone" placeholder = "Ваш телефон">
-                            </div>
-                            <div class = "form-order-item">
-                                <textarea class = "form-order-textarea" placeholder = "Текст сообщения"></textarea>
-                            </div>
-                            <div class = "form-order-submit">
-                                <button type = "button" class = "form-order-btn btn">Заказать!</button>
-                            </div>
+                        </form>
+                    </div>
+                </div>`
 
-                            <div class = "form-order-agree">
-                                * Нажимая на кнопку "Заказать!", Вы даете согласие на обработку персональных данных
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>`
+            document.body.insertAdjacentHTML('beforeend', form)
+            body_lock()
 
-        document.body.insertAdjacentHTML('beforeend', form)
-        body_lock()
+            // Маска телефона
 
-        // Маска телефона
+            let im = new Inputmask("+7 (999) 999-99-99")
+                im.mask(document.querySelector('.form-order-input-phone'))
 
-        let im = new Inputmask("+7 (999) 999-99-99")
-            im.mask(document.querySelector('.form-order-input-phone'))
+            // Отправка формы
 
-        // Отправка формы
+            document.querySelector('.form-order-btn').addEventListener('click', () => {
 
-        document.querySelector('.form-order-btn').addEventListener('click', () => {
+                let form = event.target.parentElement.parentElement
 
+                if (!form.querySelector('input[name="phone"]').inputmask.isComplete()) {console.log(88)
+
+                    form.querySelector('input[name="phone"]').style = 'border-color: red'
+                    return false
+                }
+            })
+
+            // Сброс полей
+
+            document.querySelector('.form-order-input-phone').addEventListener('click', () => {
+                event.target.style = 'border-color: #000'
+            })
+
+            document.querySelector('.form-order-input-phone').addEventListener('input', () => {
+                event.target.style = 'border-color: #000'
+            })
+
+
+            document.querySelector('.overlay').addEventListener('click', () => {
+
+                if (event.target.classList.contains('overlay') || event.target.classList.contains('close-form')) {
+
+                    body_unlock()
+                    document.querySelector('.overlay').remove()
+                }
+            })
         })
 
-        document.querySelector('.overlay').addEventListener('click', () => {
-
-            if (event.target.classList.contains('overlay') || event.target.classList.contains('close-form')) {
-
-                body_unlock()
-                document.querySelector('.overlay').remove()
-            }
-        })
-    })
+    })()
 
     // Всплывающие формы, конец
 

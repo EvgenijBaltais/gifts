@@ -7,16 +7,16 @@
 					<a href="/" class = "footer-nav__link">Главная</a>
 				</li>
 				<li class = "footer-nav__item">
-					<a href="/catalog" class = "footer-nav__link">Каталог</a>
+					<a href="/catalog/" class = "footer-nav__link">Каталог</a>
 				</li>
 				<li class = "footer-nav__item">
-					<a href="" class = "footer-nav__link">О нас</a>
+					<a href="/blog/" class = "footer-nav__link">Блог</a>
 				</li>
 				<li class = "footer-nav__item">
-					<a href="/delivery" class = "footer-nav__link">Условия доставки</a>
+					<a href="/delivery/" class = "footer-nav__link">Условия доставки</a>
 				</li>
 				<li class = "footer-nav__item">
-					<a href="/contacts" class = "footer-nav__link">Контакты</a>
+					<a href="/contacts/" class = "footer-nav__link">Контакты</a>
 				</li>
 			</ul>
 		</div>

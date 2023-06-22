@@ -3,10 +3,12 @@
 /* Кнопки */
 
 .top-button {
+	width: 250px;
 	position: relative;
 	font-size: 20px;
 	line-height: 50px;
-	margin: 50px 0 0 0
+	margin: 50px 0 0 0;
+	text-align: center;
 }
 
 .top-button-ins {

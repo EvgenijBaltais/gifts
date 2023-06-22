@@ -8,16 +8,16 @@
 					<a href="/" class = "nav-list-link">Главная</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="/catalog" class = "nav-list-link">Каталог</a>
+					<a href="/catalog/" class = "nav-list-link">Каталог</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="" class = "nav-list-link">О нас</a>
+					<a href="/blog/" class = "nav-list-link">Блог</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="/delivery" class = "nav-list-link">Условия доставки</a>
+					<a href="/delivery/" class = "nav-list-link">Условия доставки</a>
 				</li>
 				<li class = "nav-list-item">
-					<a href="/contacts" class = "nav-list-link">Контакты</a>
+					<a href="/contacts/" class = "nav-list-link">Контакты</a>
 				</li>
 			</ul>
 			<a href="/cart" class = "cart"></a>
