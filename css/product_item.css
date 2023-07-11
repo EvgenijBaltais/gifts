@@ -13,6 +13,139 @@
 .product-description {
 	width: calc(100% - 600px);
 	min-height: 500px;
+	padding-top: 30px;
+}
+
+.product-accessibility {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.accessibility-div {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+    line-height: 26px;
+}
+
+.accessibility-div span {
+	padding-left: 5px;
+	font-size: 20px;
+    line-height: 26px;
+}
+
+.accessibility-span {
+	font-weight: bold;
+	padding-right: 20px;
+	font-size: 20px;
+    line-height: 26px;
+}
+
+.accessibility-svg {
+	width: 15px;
+	height: 15px;
+}
+
+.product-p {
+	padding-top: 30px;
+	font-size: 20px;
+    line-height: 26px;
+}
+
+.volume-variants {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.volume-item {
+	display: inline-flex;
+	padding: 10px 20px;
+	margin-right: 20px;
+	font-size: 20px;
+    line-height: 26px;
+	border: 1px solid #ccc;
+	user-select: none;
+}
+
+.volume-item:last-child {
+	margin-right: 0
+}
+
+.volume-item-disable {
+	color: #ccc
+}
+
+.volume-item-available {
+	cursor: pointer;
+}
+
+.volume-item.active {
+	background-color: #44AA03;
+	transition: all .2s;
+	color: #fff;
+}
+
+.product-amount {
+	display: flex;
+	align-items: center;
+	padding-top: 50px;
+}
+
+.product-span {
+	font-size: 20px;
+    line-height: 26px;
+	padding-right: 30px;
+}
+
+.amount-select {
+	display: flex;
+	align-items: center;
+}
+
+.amount-select-minus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	font-size: 26px;
+    line-height: 26px;
+	font-weight: bold;
+	user-select: none;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.amount-select-plus {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	font-size: 26px;
+    line-height: 26px;
+	font-weight: bold;
+	user-select: none;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.amount-select-value {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80px;
+	height: 40px;
+	font-size: 20px;
+    line-height: 26px;
+	font-weight: bold;
+	user-select: none;
+	background-color: transparent!important;
+	border: 0!important;
+	outline: 0!important;
+	text-align: center;
 }
 
 /* Glide */

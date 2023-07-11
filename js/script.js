@@ -183,24 +183,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                 <div class="contact-method">
                                     <p class = "contact-method-title">Какой способ связи для Вас предпочтительнее?</p>
-                                        <form name = "contact-method-form" class = "contact-method-form">
+                                    <div class = "contact-method-form">
+                                        <label class="contact-label">
+                                            <input type="radio" name="radio" checked />
+                                            <span>Телефон</span>
+                                        </label>
+                                        <label class="contact-label">
+                                            <input type="radio" name="radio" />
+                                            <span>Whatsapp</span>
+                                        </label>
+                                        <label class="contact-label">
+                                            <input type="radio" name="radio" />
+                                            <span>Telegram</span>
+                                        </label>
+                                        <label class="contact-label">
+                                            <input type="radio" name="radio" />
+                                            <span>Не важно</span>
+                                        </label>
+                                        <div class = "contact-method-form-2">
                                             <label class="contact-label">
-                                                <input type="radio" name="radio" checked />
-                                                <span>Телефон</span>
+                                                <input type="radio" name="radio-2" />
+                                                <span>Звонок</span>
                                             </label>
                                             <label class="contact-label">
-                                                <input type="radio" name="radio" />
-                                                <span>Whatsapp</span>
+                                                <input type="radio" name="radio-2" />
+                                                <span>Сообщение</span>
                                             </label>
-                                            <label class="contact-label">
-                                                <input type="radio" name="radio" />
-                                                <span>Telegramm</span>
-                                            </label>
-                                            <label class="contact-label">
-                                                <input type="radio" name="radio" />
-                                                <span>Не важно</span>
-                                            </label>
-                                        </form>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <div class = "form-order-submit">
@@ -285,6 +295,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
         window.scrollY > navHeight ? document.querySelector('.nav').classList.add('nav-static') : document.querySelector('.nav').classList.remove('nav-static')
     })
+
+
+
+    // Выбор объема товара
+
+    if (document.querySelectorAll('.volume-item-available').length) {
+
+        document.querySelectorAll('.volume-item-available').forEach(item => {
+
+            item.addEventListener('click', () => {
+
+                event.target.parentElement.querySelectorAll('.volume-item-available').forEach(item => {
+                    item.classList.remove('active')
+                })
+
+                item.classList.add('active')
+            })
+        })
+    }
+
+    // Выбор количеста товара
+
+
+    if (document.querySelector('.product-amount')) {
+
+        let value = 0
+
+        document.querySelector('.product-amount').querySelector('.amount-select-minus').addEventListener('click', () => {
+            value = +event.target.parentElement.querySelector('.amount-select-value').value
+            value > 1 ? event.target.parentElement.querySelector('.amount-select-value').value = value - 1 : ''
+        })
+
+        document.querySelector('.product-amount').querySelector('.amount-select-plus').addEventListener('click', () => {
+            value = +event.target.parentElement.querySelector('.amount-select-value').value
+            value <= 100 ? event.target.parentElement.querySelector('.amount-select-value').value = value + 1 : ''
+        })
+    }
 
 })
 

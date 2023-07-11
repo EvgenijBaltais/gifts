@@ -51,6 +51,40 @@
 		</div>
 		<div class = "product-description">
 			<h2 class="main-h2">Кофе Arabica Lavazza 1 кг</h2>
+
+			<div class = "product-accessibility">
+				<span class = "accessibility-span">Доступность товара:</span>
+				<div class = "accessibility-div">
+					<svg aria-hidden="true" class = "accessibility-svg">
+                        <circle cx="7.5" cy="7.5" r="7.5" fill="rgb(62,214,96, 0.3)"/>
+                        <circle cx="7.5" cy="7.5" r="5" stroke="rgb(255, 255, 255)" stroke-width="1" fill="rgb(62,214,96)"/>
+                    </svg>
+					<span>В наличии</span>
+				</div>
+			</div>
+
+			<p class = "product-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ratione, 
+				doloremque cupiditate, eaque rem sint explicabo vero quos est veniam tenetur
+				 provident numquam consequatur! Id impedit temporibus doloribus ex nisi!
+			</p>
+
+			<p class = "product-volume">
+				<span>Объем</span>
+				<div class = "volume-variants">
+					<div class="volume-item volume-item-disable volume-item-250">250 г</div>
+					<div class="volume-item volume-item-available volume-item-500">500 г</div>
+					<div class="volume-item volume-item-available active volume-item-active volume-item-1000">1000 г</div>
+				</div>
+			</p>
+
+			<div class="product-amount">
+				<span class="product-span">Количество:</span>
+				<div class="amount-select">
+					<div class = "amount-select-minus">—</div>
+					<input class = "amount-select-value" value = "3" />
+					<div class = "amount-select-plus">+</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </div>
